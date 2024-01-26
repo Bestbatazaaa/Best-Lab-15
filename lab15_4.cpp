@@ -17,3 +17,15 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &A, int &B, int &C, int &D){
+	int Best[] = {A,B,C,D};
+	for(int j=3;j > 0;j--){
+		int i = rand()%(j+1);
+		swap(Best[j],Best[i]);
+	}
+	A = Best[0];
+	B = Best[1];
+	C = Best[2];
+	D = Best[3];
+	}
